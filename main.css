@@ -3,6 +3,10 @@
     src: url(JetBrainsMono-Regular.woff2);
 }
 @font-face {
+    font-family: JetBrainsMono-Bold;
+    src: url(JetBrainsMono-Bold.woff2);
+}
+@font-face {
     font-family: 'Akira Super Expanded'; 
     src: url("Akira.otf") format("opentype");
     font-style: bold;
@@ -20,8 +24,6 @@ body{
     font-family: 'JetBrainsMono-Regular';
     font-size: 1rem; 
     transition: 400ms; 
-
-    margin-top: 3rem;
 }
 .code-text:hover, .code-text:focus{
     color:red;
@@ -43,6 +45,11 @@ body{
 .textbox:hover, .textbox:active{
     border-color: #B4B4B4;
     transition: 400ms;
+}
+.warn-text{
+    font-family: 'JetBrainsMono-Bold';
+    color:white;
+    font-size: 2rem; 
 }
 .button{
     border: 1px;
@@ -76,3 +83,13 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.flex-container-3{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
